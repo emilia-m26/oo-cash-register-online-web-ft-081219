@@ -1,3 +1,5 @@
+'require pry'
+
 class CashRegister 
   attr_accessor :total, :discount
   
@@ -16,6 +18,7 @@ class CashRegister
     else 
       total_with_discount = self.total-(self.discount.to_f/100*self.total)
       "After the discount, the total comes to #{total_with_discount}."
+      binding.pry
     end
   end
  
