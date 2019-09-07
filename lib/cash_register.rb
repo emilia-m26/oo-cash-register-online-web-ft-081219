@@ -18,14 +18,12 @@ class CashRegister
     # else 
     #   self.total = self.total-(self.discount.to_f/100*self.total).to_i
     #   "After the discount, the total comes to $#{self.total}."
-      
-      
-      
-       if @discount == 0
-      "There is no discount to apply."
-    else 
+       if @discount > 0
       self.total = self.total-(self.discount.to_f/100*self.total).to_i
       "After the discount, the total comes to $#{self.total}."
+    else
+      "There is no discount to apply."
+    else 
     end
   end
  
