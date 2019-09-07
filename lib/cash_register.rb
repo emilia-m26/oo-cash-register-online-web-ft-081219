@@ -26,8 +26,8 @@ end
     end
   end
   
-  # def void_last_transaction
-  # end
+  def void_last_transaction
+  end
   
 end
 
