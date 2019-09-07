@@ -11,13 +11,17 @@ class CashRegister
   end
   
   def apply_discount
-    if @discount > 0
-      total_with_discount = total-(discount.to_f/100*total)
-      "After the discount, the total comes to #{total_with_discount}."
-    else 
+    if @discount == 0
       "There is no discount to apply."
+    else 
+      total_with_discount = self.total-(self.discount.to_f/100*total)
+      "After the discount, the total comes to #{total_with_discount}."
+    end
   end
-  end
+  
+        #     @total = self.total * (1-(self.discount/100.0))
+        #     "After the discount, the total comes to $#{@total.to_i}."
+        # end
  
   
 end
