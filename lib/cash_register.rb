@@ -18,10 +18,6 @@ class CashRegister
       "After the discount, the total comes to #{total_with_discount}."
     end
   end
-  
-        #     @total = self.total * (1-(self.discount/100.0))
-        #     "After the discount, the total comes to $#{@total.to_i}."
-        # end
  
   
 end
